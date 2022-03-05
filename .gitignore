@@ -1,0 +1,6 @@
+*.txt.user
+*.user
+*.bak
+build/
+build* 
+Q* 
