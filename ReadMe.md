@@ -52,7 +52,9 @@
   *  In the previous practice each client connection and its whole connection read and write tasks were handled in a thread of threadpool.
   *  In this practice it is the client's read message task that is handled in a thread of threadpool. This way the read message task, which can take milliseconds to finish, would not block any other read or write tasks with the same client. 
 
-
+#### [Qt QudpSocket](/Qt_QudpSocket)
+* Use QUdpSocket to bind to a local ip and port, and use writeDatagram to send packets to the target ip and port. 
+* Use QByteArray buffer, readDatagram, and pendingDatagramSize to read received UDP packets. 
 
 
 
