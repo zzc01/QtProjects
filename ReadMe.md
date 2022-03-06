@@ -1,8 +1,8 @@
 # Qt Practice Projects
 
 * These practice projects are created by QtCreator 6.0.2. 
-* Some research and study about the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
-* These are mainly based on tutorials from VoidRealms[1] Youtube channel. 
+* They are my research and study about the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
+* They are mainly based on tutorials from VoidRealms[1] Youtube channel. 
 * I also built a simple windows app that sends chat messages between two users using UDP packets. 
 <br/>
 
@@ -10,7 +10,7 @@
 * Followed instructions from VoidRealms[1]. 
 * Need registration to download Qt from [Qt website](https://www.qt.io/). 
 * Choose Qt for Open Source Development. [Open Source Usage Obligations](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
-* In the future if want to add packets can use Qt MaintenanceTool to add them. 
+* In the future if you want to add packeges can use Qt MaintenanceTool to add them. 
 * There are some other resources that demonstrate how to install and use openCV with QT. <br/><br/>
 
 ## Notes
