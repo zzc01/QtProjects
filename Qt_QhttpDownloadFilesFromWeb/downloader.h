@@ -3,11 +3,11 @@
 
 #include <QObject>
 #include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QUrl>
 #include <QFile>
 #include <QDebug>
 #include <QEventLoop>
-#include <QNetworkReply>
 #include <QThread>
 
 class Downloader : public QObject
