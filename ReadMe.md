@@ -1,30 +1,30 @@
-# Qt Practice Prorjects
+# Qt Practice Projects
 
 * These practice projects are created by QtCreator 6.0.2. 
 * Practicing the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
-* These are mainly based on tutorials from VoidRealms[1] youtube channel. 
-* I also built a simple windows app that sends message between two users using UDP packages. 
+* These are mainly based on tutorials from VoidRealms[1] Youtube channel. 
+* I also built a simple windows app that sends messages between two users using UDP packages. 
 
 
 <br/>
 
 ## Install Qt 
-* Followed intructions from VoidRealms[1]. 
+* Followed instructions from VoidRealms[1]. 
 * Need registration to download Qt from [Qt website](https://www.qt.io/). 
-* Chose Qt for Open Source Development. [Open Source Usage Obligations](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
+* Choose Qt for Open Source Development. [Open Source Usage Obligations](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
 * In the future if want to add packages can use Qt MaintenanceTool to add them. 
 * There are some other resources that demonstrate how to install and use openCV with QT. <br/><br/>
 
 
 ## Notes
 #### [Qt Download File From Web](/Qt_QhttpDownloadFilesFromWeb)
-* Use QNetworkAccessManager, QNetworkRequest, QNetworkReply, QUrl to send a simple get command to a http host. 
-* Use QEventLoop to wait for finished signal to be emitted. 
+* Use QNetworkAccessManager, QNetworkRequest, QNetworkReply, QUrl to send a simple get command to an http host. 
+* Use QEventLoop to wait for the finished signal to be emitted. 
 * Use readAll and QFile to retrieve the data and save to text.txt file. 
 
 #### [Qt QTcpSocket Basics](/Qt_QTcpSocketBasics)
 * Use QTcpSocket to simply send message to host and receive return message from host. 
-* Use SocketTest::stateChanged to observe the different states during connecting and disconnecting to host. 
+* Use SocketTest::stateChanged to observe the different states during connecting and disconnecting to the host. 
 * Use waitForConnected, waitForBytesWritten, and waitForReadyRead to make sure actions are done. 
 
 #### [Qt QTcpSocket Using Signals And Slots](/Qt_QTcpSocketUsingSignalsAndSlots)
@@ -32,14 +32,22 @@
 * Instead of using the waitFor methods, here the function sits in the eventloop and waits for signals to trigger slots. 
 
 #### [Qt QTcpServer A Basic Tcp Server App](/Qt_QTcpServerABasicTcpServerApplication)
-* Use QTcpServer to create a server and listen to incoming connections from client. 
-* Use listen and nextPendingConnection to communicate with client. 
+* Use QTcpServer to create a server and listen to incoming connections from clients. 
+* Use listen and nextPendingConnection to communicate with clients. 
 * Use telnet as client to test communication with server. 
 
 #### [Qt QTcpServer Using Multiple Threads](/Qt_QTcpServerUsingMultipleThreads)
-* Use QTcpServer to create an echo server. When a new connections comes the server would new a MyThread object inhierted from QThread. The MyThread object then takes responsibility to communucate with the client on a seperated thread than the main thread. 
-* Override incomingConnection method of QTcpSocket to handle new thread, thread start, and pass the socket descriptor to the MyThread object. 
-* Override run method of QThread. Creates new QTcpSocket and assign its socket descriptor. Echos back the recevied message to the client. 
+* Use QTcpServer to create an echo server. When a new connection comes the server would create a MyThread object inherited from QThread. The MyThread object then takes responsibility to communicate with the client on a separate thread than the main thread. 
+* Override the incomingConnection method of QTcpSocket to handle new thread, thread start, and pass the socket descriptor to the MyThread object. 
+* Override the run method of QThread. Creates new QTcpSocket and assigns its socket descriptor. Echoes back the received message to the client. 
+
+#### [Qt QTcpServer Using QThreadPool](/Qt_QTcpServerUsingQThreadPool)
+* Use QThreadPool to handle the incoming connections instead of QThread as in previous practice. 
+* The threadpool helps manage the amount of threads created. When the max thread count limit is reached, the function will wait till a thread is freed and then use it to handle the new connection. 
+* Use MySocket object which inherits QObject and Qrunnable. 
+
+
+
 
 <br/>
 
