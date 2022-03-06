@@ -2,7 +2,7 @@
 
 * These practice projects are created by QtCreator 6.0.2. 
 * They are my research and study about the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
-* They are mainly based on tutorials from VoidRealms[1] Youtube channel. 
+* They are based on tutorials from VoidRealms[1] Youtube channel. 
 * I also built a simple windows app that sends chat messages between two users using UDP packets. 
 <br/>
 
