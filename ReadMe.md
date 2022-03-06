@@ -1,9 +1,9 @@
 # Qt Practice Prorjects
 
-* Qt practice projects about QThread, QThreadPool, Qt Network, QTcpSocket, QUdpSocket usage. 
-* These are mainly based on tutorials from VoidRealms[1] youtube channel. 
-* Built a simple windows app that sends message between two users using UDP packages. 
 * These practice projects are created by QtCreator 6.0.2. 
+* Practicing the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
+* These are mainly based on tutorials from VoidRealms[1] youtube channel. 
+* I also built a simple windows app that sends message between two users using UDP packages. 
 
 
 <br/>
@@ -36,6 +36,10 @@
 * Use listen and nextPendingConnection to communicate with client. 
 * Use telnet as client to test communication with server. 
 
+#### [Qt QTcpServer Using Multiple Threads](/Qt_QTcpServerUsingMultipleThreads)
+* Use QTcpServer to create an echo server. When a new connections comes the server would new a MyThread object inhierted from QThread. The MyThread object then takes responsibility to communucate with the client on a seperated thread than the main thread. 
+* Override incomingConnection method of QTcpSocket to handle new thread, thread start, and pass the socket descriptor to the MyThread object. 
+* Override run method of QThread. Creates new QTcpSocket and assign its socket descriptor. Echos back the recevied message to the client. 
 
 <br/>
 
