@@ -21,10 +21,18 @@
 * Use QNetworkAccessManager, QNetworkRequest, QNetworkReply, QUrl to send a simple get command to a http host. 
 * Use QEventLoop to wait for finished signal to be emitted. 
 * Use readAll and QFile to retrieve the data and save to text.txt file. 
-#### [Qt Tcp Socket Basics](/Qt_QTcpSocketBasics)
+
+#### [Qt QTcpSocket Basics](/Qt_QTcpSocketBasics)
 * Use QTcpSocket to simply send message to host and receive return message from host. 
 * Use SocketTest::stateChanged to observe the different states during connecting and disconnecting to host. 
 * Use waitForConnected, waitForBytesWritten, and waitForReadyRead to make sure actions are done. 
+
+#### [Qt QTcpSocket Using Signals And Slots](/Qt_QTcpSocketUsingSignalsAndSlots)
+* Use QTcpSocket and signals and slots to send message to host and receive return message from host. 
+* Instead of using the waitFor methods, here the function sits in the eventloop and waits for signals to trigger slots. 
+
+
+
 <br/>
 
 
