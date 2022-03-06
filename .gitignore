@@ -15,3 +15,6 @@ Q6*
 
 # For test.txt
 test.txt
+
+# images
+*.png
