@@ -3,20 +3,31 @@
 * These practice projects are created by QtCreator 6.0.2. 
 * Some research and study about the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
 * These are mainly based on tutorials from VoidRealms[1] Youtube channel. 
-* I also built a simple windows app that sends messages between two users using UDP packages. 
-
-
+* I also built a simple windows app that sends chat messages between two users using UDP packets. 
 <br/>
 
 ## Install Qt 
 * Followed instructions from VoidRealms[1]. 
 * Need registration to download Qt from [Qt website](https://www.qt.io/). 
 * Choose Qt for Open Source Development. [Open Source Usage Obligations](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5).
-* In the future if want to add packages can use Qt MaintenanceTool to add them. 
+* In the future if want to add packets can use Qt MaintenanceTool to add them. 
 * There are some other resources that demonstrate how to install and use openCV with QT. <br/><br/>
 
-
 ## Notes
+
+#### [Qt Windows Chat App With UDP Packet](/Qt_WindowsAppChatUdp)
+* Use Qt widgets to build a windows app that can send chat messages between two users, picture below.  
+* Point-to-point communication using UDP packets. Here are the instructions: 
+  * Each user first need to specify its own local ip and port and target's ip and port. 
+  * Then press "Start Chat" to bind the socket with the ip and port. 
+  * Next the user can type their messages in the "Message To Send" boxt, and press "Send Message" to send. 
+  * All the sent and received messages will show up in the "Display Message" box. 
+
+<pre><p align="center">
+<img src="https://user-images.githubusercontent.com/86133411/156932839-381c5b8e-b1e0-414f-80bf-c3153885f2b5.png"  width="419" height="403">    <img src="https://user-images.githubusercontent.com/86133411/156932843-dd117c58-1205-4a92-aaad-bd2d6eef73d3.png"  width="419" height="403">
+
+</p></pre>
+
 #### [Qt Download File From Web](/Qt_QhttpDownloadFilesFromWeb)
 * Use QNetworkAccessManager, QNetworkRequest, QNetworkReply, QUrl to send a simple get command to an http host. 
 * Use QEventLoop to wait for the finished signal to be emitted. 
@@ -55,12 +66,6 @@
 #### [Qt QudpSocket](/Qt_QudpSocket)
 * Use QUdpSocket to bind to a local ip and port, and use writeDatagram to send packets to the target ip and port. 
 * Use QByteArray buffer, readDatagram, and pendingDatagramSize to read received UDP packets. 
-
-#### [Qt QudpSocket](/Qt_QudpSocket)
-*
-
-![image](https://user-images.githubusercontent.com/86133411/156913601-bc16b9fa-cddb-43c6-aa09-098afccbce1d.png)
-
 
 
 <br/>
