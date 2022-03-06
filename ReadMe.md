@@ -31,6 +31,10 @@
 * Use QTcpSocket and signals and slots to send message to host and receive return message from host. 
 * Instead of using the waitFor methods, here the function sits in the eventloop and waits for signals to trigger slots. 
 
+#### [Qt QTcpServer A Basic Tcp Server App](/Qt_QTcpServerABasicTcpServerApplication)
+* Use QTcpServer to create a server and listen to incoming connections from client. 
+* Use listen and nextPendingConnection to communicate with client. 
+* Use telnet as client to test communication with server. 
 
 
 <br/>
