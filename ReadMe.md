@@ -1,7 +1,7 @@
 # Qt Practice Projects
 
 * These practice projects are created by QtCreator 6.0.2. 
-* Practicing the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
+* Some research and study about the usage of Qt Network, QTcpSocket, QTcpServer, QUdpSocket, QThread, and QThreadPool. 
 * These are mainly based on tutorials from VoidRealms[1] Youtube channel. 
 * I also built a simple windows app that sends messages between two users using UDP packages. 
 
@@ -45,6 +45,14 @@
 * Use QThreadPool to handle the incoming connections instead of QThread as in previous practice. 
 * The threadpool helps manage the amount of threads created. When the max thread count limit is reached, the function will wait till a thread is freed and then use it to handle the new connection. 
 * Use MySocket object which inherits QObject and Qrunnable. 
+
+#### [Qt Advanced Asynchronous QTcpServer With QThreadPool](/Qt_AdvancedAsynchronousQTcpServerWithQThreadPool)
+* In this practice, similar to the previous one, the server object creates a MyClient object for each incoming client connection. But here the MyClient object uses QThreadPool to handle each read message task, which can take milliseconds to finish. 
+* The main difference of this practice and the previous one are the followings: 
+  *  In the previous practice each client connection and its whole connection read and write tasks were handled in a thread of threadpool.
+  *  In this practice it is the client's read message task that is handled in a thread of threadpool. This way the read message task, which can take milliseconds to finish, would not block any other read or write tasks with the same client. 
+
+
 
 
 
